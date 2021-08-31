@@ -20,4 +20,4 @@ hooks:
   ValidateService:
     - location: scripts/status_apache.sh
       timeout: 3600
-      runas: root
+      runas: ec2-user
