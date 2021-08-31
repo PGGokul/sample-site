@@ -9,7 +9,7 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/changepermission.sh
-      run as: root
+      runas: root
      
   ApplicationStart:
     - location: scripts/start_apache.sh
