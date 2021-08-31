@@ -9,10 +9,11 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/changepermission.sh
-      runas: root
+      
   ApplicationStart:
     - location: scripts/start_apache.sh
       timeout: 3600
+      runas: root
   AfterInstall:
     - location: scripts/status_apache.sh
       timeout: 180
